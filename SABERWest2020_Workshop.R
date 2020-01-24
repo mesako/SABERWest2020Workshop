@@ -3,6 +3,15 @@
 ###### Reproducible Analysis in R Workshop at SABERWest 2020 ######
 ###################################################################
 
+# Access this outline: https://github.com/mesako/SABERWest2020Workshop
+### also has example R code if you did not bring your own!
+
+# Fill out the survey: https://PollEv.com/mesako
+
+####################################################################
+###### Please install R/RStudio if you don't already have it! ######
+####################################################################
+
 ### LEARNING GOALS:
 # -	Describe how Git can be used to store and document different
 #   versions of a set of files
@@ -26,8 +35,8 @@
 
 ### How We Share Code ###
 
-# In groups, discuss your current system for working with, storing,
-# and sharing code that you use for research.
+# In groups (merge pairs), discuss your current system for working
+# with, storing, and sharing code that you use for research.
 
 # What are the pros and cons of your systems?
 
@@ -35,62 +44,55 @@
 # workshop could meet those needs.
 
 
-### Why Versioning? ###
+### How Can We Use Versioning? ###
 
 ### Make a Git Repo
+# cd, ls
+# git init
+# echo ".Rhistory" >> .gitignore
+
+# git config --global user.name "NAME"
+# git config --global user.email EMAIL
 
 ### Make and Save Changes
+# git add .
+# git commit -m "my first commit"
+
+# git add .
+# git commit -m "what is this"
+
+# git branch "offshoot"
+# git checkout "offshoot"
+# git merge "offshoot"
+# git branch -d "offshoot"
 
 ### Revert to Old Versions
+# git log
+# git log --oneline --graph --decorate --all
+
+# git checkout COMMITNUMBER
+
+# git checkout -b "BRANCHNAME" COMMITNUMBER
 
 
+### How Can We Share Code Online? ###
 
-### What is a Software Package? ###
+### Pushing Code to GitHub
 
-# In groups of 3-4, discuss what a software package is and contrast with
-# the current workspace. What are the components of a software package?
+# Make a GitHub account.
 
-# What distinguishes a package/library from a set of files like you just created?
+# git remote add origin https://github.com/mesako/???
+# git push -u origin master
 
-# Why would we use packages?
+### Updating and Sharing GitHub Code
 
+# git push origin master
+# git pull
 
-### Making an R Package ###
+### Using Code from GitHub
 
-# NAMESPACE
+# install_github("")
 
+# git clone
 
-
-### User-Friendly Code ###
-
-# If you shared this code with someone else in your research group,
-# or another research collaborator in the field, what would they want
-# to know to use your code?
-
-
-### Code Documentation
-
-# Functions
-
-
-
-### Using GitHub ###
-
-# Individually reflect how you can share files over the internet.
-
-# What are the pros and cons of each method? 
-
-
-### Pushing Code to GitHub ###
-
-
-
-### Action Plan ###
-
-# Reflect individually on your top three action items for when you revisit
-# your data analysis set-up.
-
-# What might be a few practical and realistic changes you can make to
-# make things easier or more convenient for you in your research?
-  
-  
+# https://github.com/mesako/PACKAGENAME.git
